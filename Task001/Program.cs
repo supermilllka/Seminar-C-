@@ -1,2 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.Write("Введите целое число 1: ");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите целое число 2: ");
+
+int number2 = Convert.ToInt32(Console.ReadLine());
+int square =number1*number1;
+if (square == number2)
+{
+   Console.Write("Первое число является квадратом второго");
+
+}
+else
+{
+ Console.Write("Первое число не является квадратом второго");   
+}
