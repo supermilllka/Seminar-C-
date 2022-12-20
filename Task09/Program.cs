@@ -10,15 +10,16 @@ Console.WriteLine($"Случайное число из отрезка 10-99 => {
  int firstDigit = number/10;
  int secondDigit = number%10;
 
- if (firstDigit>secondDigit) 
-{
-    Console.WriteLine($"Наибольшая цифра числа => {firstDigit}");
-}
- else 
- {
-    Console.WriteLine($"Наибольшая цифра числа => {secondDigit}");
- }
+ //if (firstDigit>secondDigit) 
+//{
+ //   Console.WriteLine($"Наибольшая цифра числа => {firstDigit}");
+//}
+ //else 
+//{
+//    Console.WriteLine($"Наибольшая цифра числа => {secondDigit}");
+ //}
 
- Console.WriteLine($"Наибольшая цифра числа => ");
- Console.WriteLine(firstDigit>secondDigit ? firstDigit : secondDigit);
+ 
+ int result = firstDigit>secondDigit ? firstDigit : secondDigit;
+ Console.WriteLine($"Наибольшая цифра числа => {result}");
 
