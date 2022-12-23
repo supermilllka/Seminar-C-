@@ -7,18 +7,14 @@
 Console.WriteLine("Введите  число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
+if (number<0)
+{
+  number = number*(-1);
+}
+
 if (number>=100)
 {
 int thirdDigit = ThirdDigit(number);
-int ThirdDigit (int num)
-
-{
-  while (num>999)
-  {
-    num=num/10;
-  }
-  return num % 10;
-}
 Console.WriteLine(thirdDigit);
 }
 else
@@ -26,3 +22,11 @@ else
    Console.Write("Третьей цифры нет"); 
 }
 
+int ThirdDigit (int num)
+{
+  while (num>999)
+  {
+    num=num/10;
+  }
+  return num % 10;
+}
