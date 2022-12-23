@@ -5,7 +5,6 @@
 7 -> да
 1 -> нет*/
 
-
 Console.Write("Введите число от 1 до 7: ");
 string a = Console.ReadLine();
 if (a=="1"|| a=="2" || a=="3" || a=="4" || a=="5" )
@@ -22,4 +21,5 @@ else if (a=="6" || a=="7")
 else 
 {
     Console.WriteLine("Данные не корректны"); 
+
 }
