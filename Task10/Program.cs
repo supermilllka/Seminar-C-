@@ -8,19 +8,15 @@
 Console.WriteLine("Введите  трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number>=100 && number <=999)
+if (number >= 100 && number <= 999)
 {
+    int firstDigit = number / 10;
 
-int firstDigit = number/10;
+    int secondDigit = firstDigit % 10;
 
-int secondDigit= firstDigit%10;
-
-Console.Write($" вторая  цифра:{secondDigit}");
-
+    Console.Write($" вторая  цифра:{secondDigit}");
 }
 else
 {
-Console.Write("Вы ввели не корректное число");
+    Console.Write("Вы ввели не корректное число");
 }
-
-
