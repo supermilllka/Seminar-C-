@@ -9,6 +9,7 @@
 
 Console.Write("Введите целое число:");
 int number = Convert.ToInt32(Console.ReadLine()); //конвертирует 
+
 int sumNumbers = SumNumbers(number);
 Console.WriteLine($"Сумма чисел от 1 до {number} = {sumNumbers}");
 
