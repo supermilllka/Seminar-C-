@@ -8,18 +8,13 @@ int number1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число B: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
-/*Console.WriteLine(NaturalNumber(number2) ? " " : "Ошибка. Число В должно быть натуральным");*/
-
-if (number2>0)
-{int printPower = PrintPower(number1, number2);
-Console.WriteLine($"число {number1} в натуральной степени {number2} -> {printPower}");// не понимаю как мне не выводить эту строчку, если степень отрицательная
+if (number2 > 0)
+{
+    int printPower = PrintPower(number1, number2);
+    Console.WriteLine($"число {number1} в натуральной степени {number2} -> {printPower}");
 }
 else
-Console.WriteLine("Ошибка. Число В должно быть натуральным");
-/*bool NaturalNumber(int num2)
-{
-    return num2 > 0;
-}*/
+    Console.WriteLine("Ошибка. Число В должно быть натуральным");
 
 int PrintPower(int num1, int num2)
 {
@@ -31,3 +26,10 @@ int PrintPower(int num1, int num2)
     }
     return result;
 }
+
+/*Console.WriteLine(NaturalNumber(number2) ? " " : "Ошибка. Число В должно быть натуральным");*/
+
+/*bool NaturalNumber(int num2)
+{
+    return num2 > 0;
+}*/
