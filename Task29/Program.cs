@@ -3,21 +3,21 @@
 
 //int[] array = new int[8];
 
-/*Console.Write("Введите минимальный диапозон: ");
+Console.Write("Введите минимальный диапозон: ");
 int min = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите максимальный диапозон: ");
-int max = Convert.ToInt32(Console.ReadLine());*/
+int max = Convert.ToInt32(Console.ReadLine());
 
-int[] array = CreateArray(8);
+int[] array = CreateArray(8, min, max);
 PrintArray(array);
 
-int[] CreateArray(int size) //, int min1, int max1)
+int[] CreateArray(int size, int minVaiue, int maxValue)
 {
     int[] arr = new int[size];
-    Random rnd = new Random(); //сначала создаем
+    Random rnd = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = rnd.Next(1,10); // потом подставляем
+        arr[i] = rnd.Next(minVaiue, maxValue);
     }
     return arr;
 }
@@ -26,10 +26,7 @@ void PrintArray(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        
-        Console.Write ("[{0}]",arr[i]+ " ");
-        
-
-}
-
+        //Console.WriteLine("[{0}]", string.Join(", ", arr)); // этот способ выводит массив 8 раз. Не поняла как это исправить.
+        Console.Write(arr[i] + ", ");
+    }
 }

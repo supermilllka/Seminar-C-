@@ -1,4 +1,4 @@
-﻿Console.Write("Введите целое число 1: ");
+﻿/*Console.Write("Введите целое число 1: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите целое число 2: ");
 
@@ -12,4 +12,8 @@ if (square == number2)
 else
 {
  Console.Write("Первое число не является квадратом второго");   
-}
+}*/
+
+int[] array = new int[] { 1, 2, 3 };
+
+ Console.WriteLine("[{0}]", string.Join(", ", array));
