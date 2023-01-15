@@ -9,24 +9,17 @@ PrintArray(array);
 
 void FillArray(int[] arr)
 {
-    Random rnd = new Random(); //сначала создаем 
+    Random rnd = new Random(); //сначала создаем
     for (int i = 0; i < arr.Length; i++)
     {
- 
-       arr[i] = rnd.Next(0,2) // потом подставляем
-       ; 
-       
+        arr[i] = rnd.Next(0, 2); // потом подставляем
     }
- 
 }
 
 void PrintArray(int[] arr)
 {
-   for (int i = 0; i < arr.Length; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
- 
-      Console.Write(arr[i] + " ");
-       
-    } 
+        Console.Write(arr[i] + " ");
+    }
 }
-
