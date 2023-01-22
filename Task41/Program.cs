@@ -8,16 +8,15 @@ int amount = Convert.ToInt32(Console.ReadLine());
 int[] array = GetNewArray(amount);
 PrintArray(array);
 int countPositiveNumber = CountPositiveNumber(array);
-Console.WriteLine($"{countPositiveNumber} чисел больше нуля ввел пользователь");
-
+Console.WriteLine($"{countPositiveNumber} числа(ел) больше нуля ввел пользователь");
 
 int[] GetNewArray(int size)
 {
     int[] arr = new int[size];
-    for (int i = 0; i < arr.Length; i++) 
+    for (int i = 0; i < arr.Length; i++)
     {
         Console.Write("Введите число: ");
-        arr [i] = Convert.ToInt32(Console.ReadLine());
+        arr[i] = Convert.ToInt32(Console.ReadLine());
     }
     return arr;
 }
@@ -34,13 +33,14 @@ void PrintArray(int[] arr)
     Console.WriteLine();
 }
 
-int CountPositiveNumber(int arr[i]);
-{ int count = 0;
+int CountPositiveNumber(int[] arr)
+
+{
+    int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i] > 0) 
-        count = count + 1;
-
+        if (arr[i] > 0)
+            count = count + 1;
     }
     return count;
 }
