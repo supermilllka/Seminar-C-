@@ -5,10 +5,18 @@
 Console.Write("Сколько чисел вы будете вводить?: ");
 int amount = Convert.ToInt32(Console.ReadLine());
 
+if (amount < 0)
+{
+Console.WriteLine("Ошибка. Введите положительное число");
+}
+else
+{
 int[] array = GetNewArray(amount);
 PrintArray(array);
+
 int countPositiveNumber = CountPositiveNumber(array);
 Console.WriteLine($"{countPositiveNumber} числа(ел) больше нуля ввел пользователь");
+}  
 
 int[] GetNewArray(int size)
 {
