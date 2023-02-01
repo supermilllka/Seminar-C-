@@ -17,11 +17,11 @@ PrintMatrix(array2D);
 
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {
-    int[,] matrix = new int[rows, columns]; //[0,1] - 0- строки,1- столбцы
+    int[,] matrix = new int[rows, columns]; 
     Random rnd = new Random();
-    for (int i = 0; i < matrix.GetLength(0); i++) //проходим по строкам
+    for (int i = 0; i < matrix.GetLength(0); i++) 
     {
-        for (int j = 0; j < matrix.GetLength(1); j++) // проходим по столбцам
+        for (int j = 0; j < matrix.GetLength(1); j++) 
         {
             matrix[i, j] = rnd.Next(min, max + 1);
         }
