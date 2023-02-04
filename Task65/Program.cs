@@ -9,22 +9,20 @@ int M = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите  2 число: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
-NaturalNumbersRange(M,N);
+NaturalNumbersRange(M, N);
 
 void NaturalNumbersRange(int first, int second)
 {
-    if (first == second) Console.Write($"{first} ");
-    else if (first < second) 
+    if (first == second)
+        Console.Write($"{first} ");
+    else if (first < second)
     {
         Console.Write($"{first} ");
-        NaturalNumbersRange(first + 1,second);
-    
-    
+        NaturalNumbersRange(first + 1, second);
     }
     else if (first > second)
     {
         Console.Write($"{first} ");
-        NaturalNumbersRange(first - 1,second);
-        
+        NaturalNumbersRange(first - 1, second);
     }
 }
