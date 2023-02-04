@@ -14,6 +14,7 @@ Console.WriteLine(sumDigits);
 }
 else
 Console.WriteLine("Введенные числа должны быть натуральными");
+
 int SumDigits(int first, int second)
 {
     if (first > second)
